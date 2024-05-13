@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #Set root_folder to the directory which contains run.sh
-root_folder="/home/tapan/visa-appointment-helper"
-consulate_details="locationCode=banga&realmId=210&categoryId=337"
+root_folder="/home/host/visa-appointment-helper"
+consulate_details="locationCode=tifl&realmId=744&categoryId=1344"
 rescheduling_token="2dddssasdfvkoadausiva98fash9f1"
 
 
