@@ -75,11 +75,13 @@ if [ "$available_date" != "NONE" ]; then
     echo "Need to notify : True" >> $log_file
     echo -e "Sending Cloud Messaging Request to notify android phone." >> $log_file
     
-    #Notify Tapan's phone
-    curl -X POST -H "Content-Type:application/x-www-form-urlencoded" https://llamalab.com/automate/cloud/message -d "secret=1.qUcPcUsCv78yEP1aJqh2ZoraZ4dhjxOE-CLr2PblAxY%3D&to=tapanc.nallan%40gmail.com&device=&payload=tapan" > /dev/null
+    # #Notify Tapan's phone
+    # curl -X POST -H "Content-Type:application/x-www-form-urlencoded" https://llamalab.com/automate/cloud/message -d "secret=1.qUcPcUsCv78yEP1aJqh2ZoraZ4dhjxOE-CLr2PblAxY%3D&to=tapanc.nallan%40gmail.com&device=&payload=tapan" > /dev/null
 
-    #Notify Priya's phone
-    curl -X POST -H "Content-Type:application/x-www-form-urlencoded" https://llamalab.com/automate/cloud/message -d "secret=1.sMIGzZjzBFnoToqw7iuiCRKgBenLAyTBCKnBeRHbFzs%3D&to=priyav.999%40gmail.com&device=&payload=tapan" > /dev/null
+    # #Notify Priya's phone
+    # curl -X POST -H "Content-Type:application/x-www-form-urlencoded" https://llamalab.com/automate/cloud/message -d "secret=1.sMIGzZjzBFnoToqw7iuiCRKgBenLAyTBCKnBeRHbFzs%3D&to=priyav.999%40gmail.com&device=&payload=tapan" > /dev/null
+
+    python3 lib/telegram_send_notification.py
 
     
     #****** Automatically book the appointment ********
