@@ -61,6 +61,7 @@ sleep 5
 
 solve_captcha "captchapage.html" "appointment_captcha_month"
 
+sleep 5
 
 #Get HTML page with latest available dates
 curl -X POST -v -L -s -S -F request_locale=en -F captchaText=$solution -F locationCode=banga -F realmId=210 -F categoryId=337 -b target/cookies -c target/cookies -o target/response.html "$consulate_base_url"
